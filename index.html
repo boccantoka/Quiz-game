@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HW_8</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-wrap">
+      <div class="nav-btn-wrap">
+        <button class="start-btn btn">Start game</button>
+        <button class="skip-btn btn hidden">Skip question</button>
+      </div>
+
+      <section class="game-section hidden" aria-label="game-section">
+        <div class="question-wrap">
+          <h3 class="question"></h3>
+        </div>
+        <div class="answers-wrap hidden">
+          <div class="answer-wrap">
+            <button class="answer" value="0"></button>
+          </div>
+          <div class="answer-wrap">
+            <button class="answer" value="1"></button>
+          </div>
+          <div class="answer-wrap">
+            <button class="answer" value="2"></button>
+          </div>
+          <div class="answer-wrap">
+            <button class="answer" value="3"></button>
+          </div>
+        </div>
+      </section>
+      <div class="prizes">
+        <p class="total-prize"></p>
+        <p class="round-prize"></p>
+      </div>
+      <section aria-label="Eng game message">
+        <div class="end-game-msg hidden">
+          <p></p>
+        </div>
+      </section>
+    </div>
+    <script src="js/questions.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

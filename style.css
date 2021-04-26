@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(to right, #ec6f66, #f3a183);
+  font-family: "Roboto", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.game-wrap {
+  width: 70%;
+  margin: auto;
+  height: 100vh;
+}
+
+.nav-btn-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prizes {
+  display: flex;
+  justify-content: space-between;
+}
+.game-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 100px;
+  border: 2px solid #000;
+  transition: ease-out 0.4s;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.skip-btn {
+  box-shadow: inset 0 0 0 0 #ec6f66;
+}
+
+.skip-btn:hover {
+  box-shadow: inset 200px 0 0 0 #ec6f66;
+}
+
+.start-btn {
+  box-shadow: inset 0 0 0 0 #f3a183;
+}
+
+.start-btn:hover {
+  box-shadow: inset 200px 0 0 0 #f3a183;
+}
+
+.answers-wrap {
+  min-width: 50%;
+}
+
+.answer {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  width: 100%;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6rem;
+  margin-top: 1rem;
+  transition: ease-out 0.4s;
+}
+
+.answer:hover {
+  opacity: 0.8;
+}
+
+.end-game-msg {
+  margin: 2rem auto 0 auto;
+  font-size: 3rem;
+}
+
+.end-game-msg p {
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .game-wrap {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    font-size: 10px;
+  }
+}
